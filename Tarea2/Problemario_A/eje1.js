@@ -1,16 +1,20 @@
-// Función para llenar un vector de tamaño 'tam' con números enteros aleatorios entre 'min' y 'max'
+// Función para llenar un vector de tamaño N con números enteros aleatorios entre M y N
 function llenarVectorAleatorio(tam, min, max) {
+    // Crear un vector vacío
     const vector = [];
     for (let i = 0; i < tam; i++) {
       vector.push(Math.floor(Math.random() * (max - min + 1)) + min);
     }
+    // Devolver el vector lleno
     return vector;
   }
   
   // Función para separar los números pares e impares de un vector en dos nuevos vectores
   function separarParesImpares(vector) {
+    // Crear dos vectores vacíos para guardar los números pares e impares
     const pares = [];
     const impares = [];
+    // Iterar sobre el vector original y clasificar los números en los vectores correspondientes
     vector.forEach(numero => {
       if (numero % 2 === 0) {
         pares.push(numero);
@@ -21,8 +25,8 @@ function llenarVectorAleatorio(tam, min, max) {
     return { pares, impares };
   }
   
-  // Crear un vector de 100 posiciones lleno de números enteros aleatorios entre 1 y 100
-  const vectorOriginal = llenarVectorAleatorio(100, 1, 100);
+  // Crear un vector de 100 posiciones lleno de números enteros aleatorios entre 1 y 500
+  const vectorOriginal = llenarVectorAleatorio(100, 1, 500);
   
   // Separar los números pares e impares del vector original
   const { pares, impares } = separarParesImpares(vectorOriginal);
@@ -31,6 +35,7 @@ function llenarVectorAleatorio(tam, min, max) {
   const numElementosPares = pares.length;
   const numElementosImpares = impares.length;
   let masGrande;
+  // Comparar el número de elementos en cada vector
   if (numElementosPares > numElementosImpares) {
     masGrande = "pares";
   } else if (numElementosImpares > numElementosPares) {

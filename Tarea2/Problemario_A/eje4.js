@@ -1,8 +1,10 @@
+// Const personas es un objeto que contiene los nombres de las personas y su edad
 const personas = {
     "sofia": 19,
     "mario": 21,
     "elizabeth": 54,
-    "lucas": 26
+    "lucas": 26,
+    "Williams": 23
   };
   
   // Función para formatear el nombre con la primera letra en mayúscula
@@ -12,7 +14,9 @@ const personas = {
   
   // Función para guardar las personas en un archivo de texto
   function guardarPersonas(personas) {
+    // Crear un contenido con los nombres y edades formateados
     let contenido = '';
+   // Iterar sobre las propiedades del objeto personas
     for (const nombre in personas) {
       if (personas.hasOwnProperty(nombre)) {
         const nombreFormateado = formatearNombre(nombre);
@@ -20,9 +24,10 @@ const personas = {
         contenido += `${nombreFormateado}-${edad}\n`;
       }
     }
+    // Escribir el contenido en el archivo personas.txt
     require('fs').writeFileSync('personas.txt', contenido);
   }
   
-  // Llamada a la función para guardar las personas
+  // Llamar a la función para guardar las personas en el archivo personas.txt
   guardarPersonas(personas);
   
