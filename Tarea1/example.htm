@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Frames</title>
+</head>
+<frameset rows="15%, 70%, 15%">
+    <!-- Frame para el navbar -->
+    <frame src="navbar.html" name="navbar" scrolling="no">
+
+        <!-- Frame para la información de los productos -->
+        <frame src="productos.html" name="productos">
+
+            <!-- Frame para el pie de página -->
+            <frame src="footer.html" name="footer" scrolling="no">
+
+                <!-- Si el navegador no soporta frames -->
+                <noframes>
+
+                    <body>
+                        <p>Tu navegador no soporta frames.</p>
+                    </body>
+                </noframes>
+</frameset>
+
+</html>

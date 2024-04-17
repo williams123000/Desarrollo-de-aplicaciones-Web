@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <title>Link</title>
+</head>
+
+<body>
+    <form>
+        Nombre <br />
+        <!-- El tipo text nos permite escribir texto en un campo de formulario -->
+        <input type="text" name="nombre" value="" />
+        <br>
+        Apellido
+        <br>
+        <input type="text" name="apellido" value="" />
+        <br /><br />
+        <!--El tipo reset nos permite resetear los datos del formulario-->
+        <input type="reset" name="limpia" value="Resetea los datos" />
+        <br><br>
+        Fichero adjunto <br />
+        <!-- El tipo file nos permite seleccionar un archivo de nuestro ordenador -->
+        <input type="file" name="adjunto" />
+        <br><br>
+        Esto se ve <br />
+        <input type="text" name="nombre" value="" />
+        <br>
+        <!-- El tipo hidden nos permite enviar datos ocultos en el formulario -->
+        <input type="hidden" name="oculto" value="Esto no se ve" />
+        <br><br>
+        Imagen Imagen en el botón <br />
+        <!-- El tipo image nos permite enviar un formulario al pulsar sobre una imagen -->
+        <!--
+            El atributo src nos permite indicar la ruta de la imagen que se mostrará en el botón
+            El atributo height nos permite indicar la altura de la imagen
+        -->
+        <input type="image" name="enviar" src="disk.jpg" height="90" />
+        <br><br>
+        Nombre <br />
+        <input type="text" name="nombre" value="" />
+        <br>
+        Apellido <br />
+        <input type="text" name="apelld" value="" />
+        <br /> <br />
+        <!--El tipo button nos permite crear un botón en el formulario-->
+        <input type="button" name="curp" value="Genera CURP" />
+        <input type="button" name="rfc" value="Genera RFC" />
+        <br><br>
+        <!--Select nos permite crear un menú desplegable-->
+        <select name="colores">
+            <!--Option nos permite crear las opciones del menú desplegable-->
+            <!--El atributo value nos permite indicar el valor que se enviará al servidor-->
+            <option value="blanco">blanco</option>
+            <option value="amarillo">amarillo</option>
+            <option value="verde">verde</option>
+            <option value="rojo">rojo</option>
+        </select>
+        <br><br>
+        <!--Select nos permite crear un menú desplegable-->
+        <!--El atributo size nos permite indicar el número de opciones que se mostrarán a primera vista-->
+        <select name="transporte" size="5">
+            <option>Coche</option>
+            <option>Avión</option>
+            <option>Tren</option>
+            <option>Camión</option>
+            <option>Moto</option>
+        </select>
+        <br><br>
+        <!--Textarea nos permite crear un campo de texto de varias líneas-->
+        <!--El atributo rows nos permite indicar el número de filas que tendrá el campo de texto-->
+        <!--El atributo cols nos permite indicar el número de columnas que tendrá el campo de texto-->
+        <textarea name="comentarios" rows="10" cols="40"> Escribe aquí tus comentarios</textarea>
+</body>
+
+</html>

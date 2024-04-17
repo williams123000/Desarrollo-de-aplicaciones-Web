@@ -1,0 +1,27 @@
+<html>
+<!--
+    Estructuras de control en JavaScript. 
+    La estructura de control if se utiliza para tomar decisiones en un programa.
+-->
+<head>
+    <title>If</title>
+</head>
+
+<body>
+    <h3>If</h3>
+    Dame un valor mayor que 10<br>
+    <textarea id="myTextarea" rows="1" cols="10"></textarea> <!-- Textarea es un elemento de formulario que permite al 
+        usuario ingresar texto en un área de texto. Todo lo que resive es un string -->
+    <br>
+    <button type="button" onclick="miFuncion()">OK</button>
+    <script>
+        function miFuncion() {
+            var x = document.getElementById("myTextarea").value;
+            if (x > 10) {
+                document.write("Valor mayor que 10");
+            }
+        }
+    </script>
+</body>
+
+</html>

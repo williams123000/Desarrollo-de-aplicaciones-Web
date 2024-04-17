@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>If else</title>
+</head>
+
+<body>
+    <h3>If</h3>
+    Dame un valor mayor que 10<br>
+    <textarea id="myTextarea" rows="1" cols="10"></textarea>
+    <br>
+    <button type="button" onclick="miFuncion()">OK</button>
+    <script>
+        function miFuncion() {
+            var x = document.getElementById("myTextarea").value;  // Se obtiene el valor del textarea y se almacena en la variable x
+            if (x > 10) {
+                document.write("Valor mayor que 10");
+            } else {
+                document.write("Valor menor o igual que 10");
+            }
+        }
+    </script>
+</body>
+
+</html>

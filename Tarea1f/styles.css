@@ -1,0 +1,118 @@
+/* Estilos para la fuente personalizada */
+@font-face {
+    font-family: MiFuente; /* Nombre que le das a tu fuente */
+    src: url('Fonts/Barlow-Black.ttf') format('opentype'); /* Ruta a tu archivo de fuente .otf */
+}
+/* Estilos para la fuente personalizada */
+@font-face {
+    font-family: Products; /* Nombre que le das a tu fuente */
+    src: url('Fonts/Barlow-ExtraLight.ttf') format('opentype'); /* Ruta a tu archivo de fuente .otf */
+}
+
+/* Estilos para el cuerpo del documento */
+body {
+    font-family: MiFuente, Arial, sans-serif; /* Utiliza tu fuente personalizada como primera opción */
+    background-color: #F3F5FB; /* Color de fondo del cuerpo del documento */
+    margin: 0; /* Eliminar el margen exterior del cuerpo */
+    width: 100%; /* Ancho completo del cuerpo */
+    height: 100%; /* Altura completa del cuerpo */
+    
+}
+
+/* Estilos para el navbar */
+header {
+    background-color: #5F79D0; /* Color de fondo del encabezado */
+    color: #F3F5FB; /* Color del texto en el encabezado */
+    padding: 5px; /* Espaciado interno del encabezado */
+    text-align: center; /* Centrar el texto en el encabezado */
+    position: fixed; /* Fijar el encabezado en la parte superior de la ventana */
+    top: 0; /* Alinear el encabezado en la parte superior */
+    width: 100%; /* Ancho completo del encabezado */
+    z-index: 1000; /* Capa superior del encabezado */
+}
+
+/* Estilos para la sección de productos */
+ul {
+    font-family: Products, Arial, sans-serif; /* Utiliza tu fuente personalizada como primera opción */
+    list-style-type: none; /* Eliminar los estilos de viñeta de la lista */
+    padding: 0; /* Eliminar el espacio interno de la lista */
+    margin: 0; /* Eliminar el margen exterior de la lista */
+    display: grid; /* Utilizar el modelo de diseño de cuadrícula */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Distribuir los elementos en columnas automáticas con un ancho mínimo de 200px */    gap: 10px; /* Espacio entre los elementos de la cuadrícula */
+    padding: 20px; /* Espaciado interno de la lista */
+    justify-content: center; /* Centrar los elementos horizontalmente */
+}
+
+ul li {
+    border: 0px solid #ccc; /* Borde alrededor de cada elemento de la lista */
+    padding: 15px; /* Espaciado interno de cada elemento de la lista */
+    text-align: center; /* Centrar el texto en cada elemento de la lista */
+    display: flex; /* Utilizar el modelo de diseño flexible */
+    flex-direction: column; /* Apilar los elementos en columnas */
+    align-items: center; /* Centrar horizontalmente los elementos */
+    background-color: #ffffff; /* Color de fondo de cada elemento de la lista */
+    border-radius: 30px; /* Bordes redondeados de 30px */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra alrededor de cada elemento de la lista */
+    transition: all 0.3s; /* Transición suave de 0.3 segundos */
+    
+}
+
+ul li img {
+    height: 120px; /* Altura automática de la imagen */
+    width: auto; /* Ancho automático de la imagen */
+}
+
+
+/* Estilos para el footer */
+footer {
+    background-color: #5F79D0; /* Color de fondo del pie de página */
+    color: #F3F5FB; /* Color del texto en el pie de página */
+    padding: 5px; /* Espaciado interno del pie de página */
+    text-align: center; /* Centrar el texto en el pie de página */
+    bottom: 0; /* Alinear el pie de página en la parte inferior */
+    width: 100%; /* Ancho completo del pie de página */
+    
+}
+table{
+    padding: 0px; /* Espaciado interno de las celdas de la tabla */
+    text-align: center; /* Centrar el texto en las celdas de la tabla */
+    background-color: #ffffff; /* Color de fondo de las celdas de la tabla */
+    width: 100%; /* Ancho completo de la tabla */
+    height: auto;   /* Altura de la tabla */
+    border-radius: 10px; /* Bordes redondeados de 10px */
+}
+
+li img:nth-of-type(2){
+    /* Poner encima de la imagen */
+    position: absolute;
+    width: 50px; /* Ancho de la imagen */
+    height: 50px; /* Altura de la imagen */
+    margin-right: 250px; /* Margen izquierdo de la imagen */
+}
+
+li button img {
+    margin-right: 5px; /* Espacio entre el texto y la imagen */
+    vertical-align: middle; /* Alinea verticalmente la imagen */
+    width: 20px; /* Ancho de la imagen */
+    height: 20px; /* Altura de la imagen */
+    
+}
+li button{
+    font-family: Products, Arial, sans-serif; /* Utiliza tu fuente personalizada como primera opción */
+    background-color: #F3F5FB; /* Color de fondo del botón */
+    color: #000000; /* Color del texto en el botón */
+    border: none; /* Eliminar el borde del botón */
+    padding: 5px 10px; /* Espaciado interno del botón */
+    border-radius: 7px; /* Bordes redondeados de 5px */
+    cursor: pointer; /* Cambiar el cursor al pasar el ratón por encima */
+    transition : all 0.3s; /* Transición suave de 0.3 segundos */
+
+}
+
+
+
+
+h1 {
+    margin-left: 3%; /* Margen izquierdo del encabezado de nivel 1 */
+}
+

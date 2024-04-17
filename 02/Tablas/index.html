@@ -1,0 +1,154 @@
+<html>
+
+<head>
+    <title>Tablas</title>
+</head>
+
+<body>
+    <!-- Las tablas se crean con el tag <table> y se cierran con </table>. Dentro de las tablas se pueden crear filas con el tag <tr> 
+    y se cierran con </tr>. Dentro de las filas se pueden crear celdas con el tag <td> y se cierran con </td>. -->
+    <table>
+        <tr>
+            <td>Nombre</td>
+            <td>Apellido</td>
+            <td>Edad</td>
+        </tr>
+        <tr>
+            <td>Juan</td>
+            <td>Pérez</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>María</td>
+            <td>Gómez</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Carlos</td>
+            <td>Rodríguez</td>
+            <td>20</td>
+        </tr>
+    </table>
+    <!-- El tag <th> indica que se trata de celdas que sirven como encabezado de tabla y suelen visualizarse en negrita. Y la 
+    opción border le agrega borde a nuestra tabla-->
+    <h3>Tabla con encabezado</h3>
+    <br>
+    <table border="1">
+        <tr>
+            <th>Cabereca 1</th>
+            <th>Cabereca 2</th>
+            <th>Cabereca 3</th>
+        </tr>
+        <tr>
+            <td>Dato 1</td>
+            <td>Dato 2</td>
+            <td>Dato 3</td>
+        </tr>
+        <tr>
+            <td>Dato 4</td>
+            <td>Dato 5</td>
+            <td>Dato 6</td>
+        </tr>
+    </table>
+    <!-- El atributo colspan se utiliza para indicar cuántas celdas adyacentes se van a combinar en una sola celda. -->
+    <h3>Celdas Extendidas</h3>
+    <br>
+    <table border>
+        <tr>
+            <td>Item 1</td>
+            <td colspan=2>Item 2</td>
+        </tr>
+        <tr>
+            <td>Item 3</td>
+            <td>Item 4</td>
+            <td>Item 5</td>
+        </tr>
+    </table>
+    <!-- El atributo rowspan se utiliza para indicar cuántas celdas adyacentes se van a combinar en una sola celda. -->
+    <h3>Celdas Extendidas</h3>
+    <br>
+    <table border>
+        <tr>
+            <td>Item 1</td>
+            <td rowspan=2>Item 2</td>
+            <td>Item 3</td>
+        </tr>
+        <tr>
+            <td>Item 4</td>
+            <td>Item 5</td>
+        </tr>
+    </table>
+
+    <!--Combinación de columna expandida y cabecera-->
+    <h3>Combinación de columna expandida y cabecera</h3>
+    <br>
+    <table border>
+        <tr>
+            <th colspan=2>Head1</th>
+            <th colspan=2>Head2</th>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td>E</td>
+            <td>F</td>
+            <td>G</td>
+            <td>H</td>
+        </tr>
+    </table>
+
+    <!--Cabeceras laterales-->
+    <h3>Cabeceras laterales</h3>
+    <br>
+    <table border>
+        <tr>
+            <th>Head1</th>
+            <td>C 1</td>
+            <td>C 2</td>
+            <td>C 3</td>
+        </tr>
+        <tr>
+            <th>Head2</th>
+            <td>C 4</td>
+            <td>C 5</td>
+            <td>C 6</td>
+        </tr>
+        <tr>
+            <th>Head3</th>
+            <td>C 7</td>
+            <td>C 8</td>
+            <td>C 9</td>
+        </tr>
+    </table>
+
+    <!--Combinación de cabeceras laterales y líneas expandidas-->
+    <h3>Combinación de cabeceras laterales y líneas expandidas</h3>
+    <br>
+    <table border>
+        <tr>
+            <th rowspan=2>Head1</th>
+            <td>C 1</td>
+            <td>C 2</td>
+            <td>C 3</td>
+        </tr>
+        <tr>
+            <td>C 4</td>
+            <td>C 5</td>
+            <td>C 6</td>
+        </tr>
+        <tr>
+            <th>Head2</th>
+            <td>C 7</td>
+            <td>C 8</td>
+            <td>C 9</td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>

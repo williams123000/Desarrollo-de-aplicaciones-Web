@@ -1,0 +1,205 @@
+<html>
+
+<head>
+    <title>Alineación Celdas</title>
+</head>
+
+<body>
+    <!--El atributo align= define horizontalmente los datos al margen izquierdo (left), al derecho (right) o centrado (center).-->
+    <!--El atributo valign= define verticalmente los datos al margen superior (top), al inferior (bottom) o centrado (middle).-->
+    <h1>Alineación de celdas</h1>
+    <table border>
+        <tr>
+            <th>Cabecera alineado de celdas 1</th>
+            <th>Cabecera alineado de celdas 2</th>
+            <th>Cabecera alineado de celdas 3</th>
+        </tr>
+        <tr align=center>
+            <td>Todas centradas</td>
+            <td>Celda 2</td>
+            <td>Otra celda<br> Celda 3</td>
+        </tr>
+        <tr>
+            <td align=right>Alineado a la derecha</td>
+            <td align=center>Alineado al centro</td>
+            <td>Por defecto izquierda</td>
+        </tr>
+    </table>
+
+    <!--Alineado verticlad del contenido de celdas-->
+    <br>
+    <h3>Alineado vertical del contenido de las celdas</h3>
+    <table border>
+        <tr>
+            <td>Parrafo 1 <br> Parrafo 2 <br> Parrafo 3 <br> Parrafo 4 <br> </td>
+            <td valign=top>Alineado arriba</td>
+            <td valign=bottom>Alineado abajo</td>
+            <td>Por defecto<br>alineado al centro</td>
+        </tr>
+    </table>
+
+    <br>
+    <h1>Titulos</h1>
+
+    <!--El atributo caption= se utiliza para definir el título de la tabla.-->
+    <h3>Titulo arriba</h3>
+    <table border>
+        <caption align=top>Titulo arriba</caption>
+        <tr>
+            <th>Enero</th>
+            <th>Febrero</th>
+            <th>Marzo</th>
+        </tr>
+        <tr>
+            <td>Celda 1</td>
+            <td>Celda 2</td>
+            <td>Celda 3</td>
+        </tr>
+    </table>
+
+    <!--Titulo debajo de la tabla-->
+    <br>
+    <h3>Titulo abajo</h3>
+    <table border>
+        <caption align=bottom>Titulo abajo</caption>
+        <tr>
+            <th>Enero</th>
+            <th>Febrero</th>
+            <th>Marzo</th>
+        </tr>
+        <tr>
+            <td>Celda 1</td>
+            <td>Celda 2</td>
+            <td>Celda 3</td>
+        </tr>
+    </table>
+
+    <!--Titulo a la izquierda de la tabla-->
+    <br>
+    <h3>Titulo a la izquierda</h3>
+    <table border>
+        <caption align=left>Titulo a la izquierda</caption>
+        <tr>
+            <th>Enero</th>
+            <th>Febrero</th>
+            <th>Marzo</th>
+        </tr>
+        <tr>
+            <td>Celda 1</td>
+            <td>Celda 2</td>
+            <td>Celda 3</td>
+        </tr>
+    </table>
+
+    <!--Titulo a la derecha de la tabla-->
+    <br>
+    <h3>Titulo a la derecha</h3>
+    <table border>
+        <caption align=right>Titulo a la derecha</caption>
+        <tr>
+            <th>Enero</th>
+            <th>Febrero</th>
+            <th>Marzo</th>
+        </tr>
+        <tr>
+            <td>Celda 1</td>
+            <td>Celda 2</td>
+            <td>Celda 3</td>
+        </tr>
+    </table>
+
+    <!--Longitud de tablas-->
+    <!--El atributo width= se utiliza para definir el ancho de la tabla.-->
+    <!--El atributo height= se utiliza para definir la altura de la tabla.-->
+    <br>
+    <h3>Longitud de tablas</h3>
+    <table border width="50%" height="25%">
+        <tr>
+            <td>Celda 1</td>
+            <td>Celda 2</td>
+            <td>Celda 3</td>
+        </tr>
+        <tr>
+            <td> A </td>
+            <td> B </td>
+            <td> C </td>
+        </tr>
+    </table>
+
+    <!--Colores-->
+    <br>
+    <!--El atributo bgcolor= se utiliza para definir el color de fondo de la tabla.-->
+    <!--El atributo color= se utiliza para definir el color del texto de la tabla.-->
+    <h1>Colores</h1>
+    <h3>Color de fondo</h3>
+    <table border>
+        <caption align=bottom>Titulo abajo</caption>
+        <tr>
+            <td bgcolor="red">Texto ROJO</td>
+            <td bgcolor="green">Texto VERDE</td>
+        </tr>
+        <tr>
+            <td bgcolor="blue">Texto AZUL</td>
+            <td bgcolor="yellow">Texto AMARILLO</td>
+        </tr>
+    </table>
+
+    <br>
+    <h3>Color de texto</h3>
+    <table border>
+        <caption>Título abajo</caption>
+        <tr>
+            <td>
+                <font color="red">Texto ROJO</font>
+            </td>
+            <td>
+                <font color="green">Texto VERDE</font>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <font color="blue">Texto AZUL</font>
+            </td>
+            <td>
+                <font color="yellow">Texto AMARILLO</font>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+    <!--Borde de la tabla de color-->
+    <!--El atributo border= se utiliza para definir el ancho del borde de la tabla.-->
+    <!--El atributo bordercolor= se utiliza para definir el color del borde de la tabla.-->
+    <h3>Borde de la tabla de color</h3>
+    <table border="5" bordercolor="red">
+        <tr>
+            <th>Cabereca 1</th>
+            <th>Cabereca 2</th>
+        </tr>
+        <tr>
+            <td>Dato 1</td>
+            <td>Dato 2</td>
+        </tr>
+    </table>
+
+    <br>
+    <!--Dimensionado de la tabla-->
+    <!--El atributo cellpadding= se utiliza para definir el espacio entre el borde de la celda y el contenido de la celda.-->
+    <!--El atributo cellspacing= se utiliza para definir el espacio entre las celdas de la tabla.-->
+    <h3>Dimensionado de la tabla</h3>
+    <table border cellpadding="10" cellspacing="0">
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
