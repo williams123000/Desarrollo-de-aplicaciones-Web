@@ -23,7 +23,7 @@ body {
 header {
     background-color: #5F79D0; /* Color de fondo del encabezado */
     color: #F3F5FB; /* Color del texto en el encabezado */
-    padding: 5px; /* Espaciado interno del encabezado */
+    padding: 4px; /* Espaciado interno del encabezado */
     text-align: center; /* Centrar el texto en el encabezado */
     position: fixed; /* Fijar el encabezado en la parte superior de la ventana */
     top: 0; /* Alinear el encabezado en la parte superior */
