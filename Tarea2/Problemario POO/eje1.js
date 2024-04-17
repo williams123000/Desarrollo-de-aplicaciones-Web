@@ -1,10 +1,11 @@
+// Clase Punto con dos atributos x y y que representan las coordenadas de un punto en el plano cartesiano.
 class Punto {
     constructor(x, y) {
         this.x = x;
         this.y = y;
     }
 
-    // Método para calcular la distancia desde el origen hasta el punto
+    // Método para calcular la distancia del punto al origen. Formula: distancia = sqrt(x^2 + y^2) 
     calcularDistancia() {
         return Math.sqrt(this.x * this.x + this.y * this.y);
     }
@@ -14,22 +15,21 @@ class Punto {
         return "(" + this.x + ", " + this.y + ")";
     }
 
-    // Método para convertir las coordenadas a formato polar
+    // Método para convertir las coordenadas a formato polar.
     to_string_polares() {
+        // Calcular la distancia y el ángulo del punto al origen
         let distancia = this.calcularDistancia();
-        let angulo = Math.atan2(this.y, this.x); // Calcula el ángulo en radianes
-        angulo = angulo * (180 / Math.PI); // Convierte el ángulo a grados
-
-        // Asegurarse de que el ángulo esté en el rango de 0 a 360 grados
-        if (angulo < 0) {
-            angulo = 360 + angulo;
-        }
-
+        // Calcula el ángulo en radianes y lo convierte a grados. Formula: angulo = atan2(y, x) * (180 / Math.PI) 
+        let angulo = Math.atan2(this.y, this.x); 
+        angulo = angulo * (180 / Math.PI);
+         
+        // Devuelve la distancia y el ángulo en formato polar.
         return "(" + distancia.toFixed(2) + ", " + angulo.toFixed(2) + "°)";
     }
 }
 
-// Ejemplo de uso
-let punto = new Punto(3, 4);
+// Crear un objeto de la clase Punto
+let punto = new Punto(10, 12);
+// Mostrar las coordenadas en formato cartesiano y polar del punto creado anteriormente 
 console.log("Coordenadas cartesianas:", punto.to_string_cartesianas());
 console.log("Coordenadas polares:", punto.to_string_polares());
