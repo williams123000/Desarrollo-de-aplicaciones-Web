@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio 2 Problemario_A</title>
+</head>
+
+<body>
+    <h2>Ingrese los nombres de los animales:</h2>
+    <input type="text" id="animalInput">
+    <button onclick="agregarAnimal()">Agregar</button>
+
+    <h2>Ingrese el nombre del animal que desea buscar:</h2>
+    <input type="text" id="buscarInput">
+    <button onclick="buscarAnimal()">Buscar</button>
+
+    <h2>Resultado:</h2>
+    <pre id="resultado"></pre>
+
+    <script language="JavaScript">
+        // Array para almacenar los nombres de los animales
+        const animales = [];
+
+        // Función para agregar un animal al array
+        function agregarAnimal() {
+            const input = document.getElementById("animalInput");
+            const nombre = input.value.trim(); 
+            console.log("Animal ingresado: ", nombre);
+            if (nombre !== "") {
+                animales.push(nombre);
+                input.value = ""; // Limpiar el campo de entrada
+                input.focus(); // Poner el foco en el campo de entrada
+            }
+        }
+
+        // Función para buscar el animal ingresado
+        function buscarAnimal() {
+            const input = document.getElementById("buscarInput");
+            const animalBuscado = input.value.trim();
+            console.log("Animal a buscar: ", animalBuscado);
+            if (animalBuscado !== "") {
+                const indice = animales.indexOf(animalBuscado);
+                if (indice !== -1) {
+                    const resultado = document.getElementById("resultado");
+                    resultado.innerText = `El animal a buscar es: ${animalBuscado}\n\nAnimales a la izquierda:\n${animales.slice(0, indice).join("\n")}\n\nAnimales a la derecha:\n${animales.slice(indice + 1).join("\n")}`;
+                } else {
+                    alert("El animal buscado no se encuentra en la lista.");
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <title>Ejercicio 1 Problemario_A</title>
+</head>
+
+<body>
+    <script language="JavaScript">
+        // Función para llenar un vector de tamaño N con números enteros aleatorios entre M y N
+        function llenarVectorAleatorio(tam, min, max) {
+            // Crear un vector vacío
+            const vector = [];
+            for (let i = 0; i < tam; i++) {
+                vector.push(Math.floor(Math.random() * (max - min + 1)) + min);
+            }
+            // Devolver el vector lleno
+            return vector;
+        }
+
+        // Función para separar los números pares e impares de un vector en dos nuevos vectores
+        function separarParesImpares(vector) {
+            // Crear dos vectores vacíos para guardar los números pares e impares
+            const pares = [];
+            const impares = [];
+            // Iterar sobre el vector original y clasificar los números en los vectores correspondientes
+            vector.forEach(numero => {
+                if (numero % 2 === 0) {
+                    pares.push(numero);
+                } else {
+                    impares.push(numero);
+                }
+            });
+            return { pares, impares };
+        }
+
+        // Crear un vector de 100 posiciones lleno de números enteros aleatorios entre 1 y 500
+        const vectorOriginal = llenarVectorAleatorio(100, 1, 500);
+
+        // Separar los números pares e impares del vector original
+        const { pares, impares } = separarParesImpares(vectorOriginal);
+
+        // Determinar cuál vector es más grande y contar el número de elementos en cada uno
+        const numElementosPares = pares.length;
+        const numElementosImpares = impares.length;
+        let masGrande;
+        // Comparar el número de elementos en cada vector
+        if (numElementosPares > numElementosImpares) {
+            masGrande = "pares";
+        } else if (numElementosImpares > numElementosPares) {
+            masGrande = "impares";
+        } else {
+            masGrande = "iguales";
+        }
+
+        // Mostrar los resultados
+        console.log("Vector original:", vectorOriginal);
+        console.log("Vector de números pares:", pares);
+        console.log("Vector de números impares:", impares);
+        console.log("El vector más grande es el de los", masGrande);
+        console.log("Número de elementos en el vector de pares:", numElementosPares);
+        console.log("Número de elementos en el vector de impares:", numElementosImpares);
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio 3 Problemario_A</title>
+</head>
+
+<body>
+    <h2>Ingrese la fecha:</h2>
+    <input type="number" id="diaInput" placeholder="Día">
+    <input type="number" id="mesInput" placeholder="Mes">
+    <input type="number" id="añoInput" placeholder="Año">
+    <button onclick="calcularDiaJuliano()">Calcular Día Juliano</button>
+
+    <h2>Resultado:</h2>
+    <p id="resultado"></p>
+
+    <script language="JavaScript">
+        // Función para obtener los días de un mes en un año dado
+        function diasDelMes(mes, año) {
+            // Definir los días por mes en un año no bisiesto y en un año bisiesto 
+            const diasPorMes = [31, esBisiesto(año) ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+            // Devolver el número de días del mes correspondiente (restar 1 al mes para obtener el índice correcto) 
+            return diasPorMes[mes - 1];
+        }
+
+        // Función para determinar si un año es bisiesto
+        function esBisiesto(año) {
+            // Un año es bisiesto si es divisible por 4 pero no por 100, o si es divisible por 400
+            return (año % 4 === 0 && año % 100 !== 0) || año % 400 === 0;
+        }
+
+        // Función para calcular el día juliano correspondiente a una fecha
+        function calcularDiaJuliano() {
+            const dia = parseInt(document.getElementById("diaInput").value);
+            const mes = parseInt(document.getElementById("mesInput").value);
+            const año = parseInt(document.getElementById("añoInput").value);
+            console.log("Fecha ingresada: ", dia, mes, año);
+            let juliano = 0;
+
+            for (let m = 1; m < mes; m++) {
+                juliano += diasDelMes(m, año);
+            }
+            juliano += dia;
+
+            // Mostrar el resultado en el elemento con id "resultado"
+            document.getElementById("resultado").innerText = `El día juliano correspondiente a la fecha ${dia}/${mes}/${año} es: ${juliano}`;
+            console.log("Día juliano:", juliano);
+        }
+    </script>
+</body>
+
+</html>
