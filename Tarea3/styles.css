@@ -44,3 +44,13 @@ body {
     margin-bottom: 1rem;
 }
 
+table{
+    padding: 0px; /* Espaciado interno de las celdas de la tabla */
+    text-align: center; /* Centrar el texto en las celdas de la tabla */
+    background-color: #2B3035; /* Color de fondo de las celdas de la tabla */
+    width: 100%; /* Ancho completo de la tabla */
+    height: auto;   /* Altura de la tabla */
+    border-radius: 10px; /* Bordes redondeados de 10px */
+    margin-top: 1rem;
+    color: white;
+}
